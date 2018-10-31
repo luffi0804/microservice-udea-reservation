@@ -1,0 +1,21 @@
+spring:
+    application:
+        name: microservice-product
+        freemaker:
+                enable: false
+        thymeleaf:
+            cache: false
+            prefix: /classpath:templetes/
+            
+eureka:
+    cliet:
+        serviceUrl:
+            defaultZone: http://localhost:1111/eureka/
+            bealthcheck:
+                enable: true
+    instance:
+        leaseRenewalIntervalInSeconds: 1
+        leaseExpirationDurationInSeconds: 2
+        
+server:
+    port: 3333
